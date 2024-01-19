@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&family=Lexend+Deca:wght@200;300;400;500;600&family=Urbanist:wght@200;300;400;500;600;700&display=swap');
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Urbanist', sans-serif;
+}
+
+.MainFooter {
+    height: 200px;
+    background-color: #252525;
+    /* margin-top: 20px; */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SecondFooterDiv {
+    /* border: 1px solid green; */
+    width: 500px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.SecondFooterDiv>div {
+    border: 2px solid rgb(173, 173, 173);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.SecondFooterDiv>div>a>svg {
+    fill: rgb(156, 156, 156);
+}
+
+
+@media screen and (max-width:575px) {
+    .SecondFooterDiv {
+        width: 95%;
+    }
+
+    .SecondFooterDiv>div {
+        border: 2px solid rgb(173, 173, 173);
+        padding: 3px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+}

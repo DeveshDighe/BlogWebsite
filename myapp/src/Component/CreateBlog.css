@@ -1,0 +1,31 @@
+.Custom_textarea {
+    height: 400px;
+    /* resize: both; */
+    margin-right: 100px;
+}
+
+.a {
+    overflow: hidden;
+}
+
+.widthFull {
+    width: 100%;
+}
+
+#disablebtn:disabled {
+    background-color: black;
+}
+
+/* 
+.ZoomImg:hover{
+    width: 1000px;
+} */
+
+/* .inputFile {
+    width: 80px;
+    border: 1px solid red;
+} */
+
+input[type="file"] {
+    width: 100%;
+}

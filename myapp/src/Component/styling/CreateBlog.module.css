@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500&family=Lexend+Deca:wght@100;200;300;400;500;600;700;800&family=Urbanist:wght@300;400;500;700;800&display=swap');
+
+ 
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.brdr{
+    border: 1px solid red;
+}
+
+/* .padTop{
+    
+} */
+.mainDiv{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8x6Lt4JbSjUoPse3v0LtGeFqYb6Go3WCoF2paXNp5f2XaIyaIiXCzk4Kf_y2ppvK69Nw&usqp=CAU');
+    background-size: 100% 100%;
+
+    /* background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
+
+height: 963px;
+}
+
+.EditMainDiv{
+    background-image: url('https://www.creativefabrica.com/wp-content/uploads/2021/01/28/Colorful-Watercolor-Background-Graphics-8158369-1.jpg');
+    background-size: 100% 100%;
+    height: 963px;
+}
+
+label{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.load{
+    height: 60px;
+  }
+
+
+@media screen and (max-width: 800px) {
+    .EditMainDiv{
+        background: rgb(255,212,183);
+background: linear-gradient(16deg, rgba(255,212,183,1) 13%, rgba(200,255,251,1) 87%);
+    }
+}

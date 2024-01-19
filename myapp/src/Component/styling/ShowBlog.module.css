@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&family=Lexend+Deca:wght@200;300;400;500;600&family=Urbanist:wght@200;300;400;500;600;700&display=swap');
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Urbanist', sans-serif;
+}
+
+.mainDiv {
+    background-color: #f4feff;
+    padding-bottom: 40px;
+    padding-top: 20px;
+
+}
+
+
+.InnerImgDiv {
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    height: 100%;
+    width: 700px;
+    overflow: hidden;
+}
+
+.secDiv {
+    /* border: 1px solid red; */
+    width: 75%;
+    border-radius: 30px;
+    padding: 20px;
+    text-align: justify;
+    background: rgb(239, 250, 255);
+    background: radial-gradient(circle, rgba(239, 250, 255, 1) 35%, rgba(208, 239, 252, 1) 100%);
+    box-shadow: inset 1px 1px 100px 1px rgb(171, 227, 253);
+    cursor: pointer;
+
+}
+
+.ImgDiv {
+    /* border: 1px solid green; */
+    height: auto;
+}
+
+
+.ImgFull {
+    height: 100%;
+    width: 100%;
+    transform-origin: top;
+    transition: 0.2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+}
+
+.Dec_Center {
+    text-align: justify;
+}
+
+p {
+    font-size: 1.07rem;
+    font-weight: 500;
+}
+
+h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 2.1rem;
+    opacity: 0.9;
+}
+
+h5 {
+    font-size: 1.15rem
+}
+
+.preClass {
+    white-space: pre-wrap;
+}
+
+pre {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 500;
+    font-size: 1.07rem;
+}
+
+/* img{
+    
+} */
+.ImgFull:hover {
+    transform: scale(1.1);
+}
+
+/* Nav Bar */
+
+.Navbg {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 60px 0px 60px;
+    cursor: pointer;
+}
+
+.Navbg>div {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.Navh4 {
+    display: flex;
+    justify-content: center;
+    /* Center the content horizontally */
+    align-items: center;
+    /* Center the content vertically */
+    margin: 0;
+    /* Remove default margin to ensure proper centering */
+    color: rgb(98, 0, 255);
+}
+
+.Navh5 {
+    display: flex;
+    justify-content: center;
+    /* Center the content horizontally */
+    align-items: center;
+    /* Center the content vertically */
+    margin: 0;
+    /* Remove default margin to ensure proper centering */
+    color: rgb(0, 162, 255);
+}
+
+.Sign {
+    border: none;
+    font-size: 1.1rem;
+    color: rgb(0, 162, 255);
+    font-weight: 500;
+    background: transparent;
+}
+
+.navForm {
+    position: relative;
+}
+
+/* .navFormCont{
+    
+} */
+
+.icons {
+    display: none;
+}
+
+.DropDown {
+    display: none;
+
+}
+
+.DropDownHide {
+    display: none;
+}
+
+.DropDown>div>li {
+    list-style: none;
+    line-height: 35px;
+}
+
+.DropDownHide>div>li {
+    list-style: none;
+    line-height: 35px
+}
+
+.Drop_A {
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 500;
+    color: rgb(122, 92, 255);
+
+}
+
+
+
+
+@media screen and (max-width: 1400px) {
+    .secDiv {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+
+    .ImgDiv {
+        height: 400px;
+    }
+
+    .InnerImgDiv {
+
+        border-radius: 10px;
+        height: 100%;
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 871px) {
+    .ImgDiv {
+        height: auto;
+    }
+
+    .InnerImgDiv {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .secDiv {
+        width: 90%;
+    }
+
+    .Sign {
+        display: none;
+    }
+
+    .icons {
+        display: block;
+        fill: rgb(98, 0, 255);
+
+    }
+
+
+    .Navbg {
+        padding: 0px 20px 0px 20px;
+    }
+
+    /* .Navh4{
+        display: none;
+    } */
+
+    .Navh5 {
+        display: none;
+    }
+
+
+
+    .DropDown {
+        position: absolute;
+        width: 150px;
+        height: 200px;
+        background-color: white;
+        border: 1px solid rgb(95, 95, 95);
+        top: 45px;
+        right: 10px;
+        display: block;
+        transition: 0.3s;
+        /* max-height: 140px; */
+        border-radius: 20px;
+        padding: 10px;
+        z-index: 3;
+
+    }
+
+    .DropDownHide {
+        position: absolute;
+        width: 150px;
+        height: 0px;
+        background-color: white;
+        border: 1px solid rgb(95, 95, 95);
+        top: 45px;
+        right: 10px;
+        display: block;
+        transition: 0.3s;
+        /* max-height: 140px; */
+        border-radius: 20px;
+        opacity: 0;
+        padding: 10px;
+        z-index: 3;
+
+    }
+
+    .DropDown::before {
+        content: '';
+        position: absolute;
+        top: -0.3rem;
+        right: 0.5rem;
+        width: 20px;
+        height: 14px;
+        background-color: white;
+        transform: rotate(45deg);
+        border-left: 1px solid rgb(95, 95, 95);
+        border-top: 1px solid rgb(95, 95, 95);
+
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 575px) {
+    .secDiv {
+        width: 100%;
+    }
+
+    h5 {
+        font-size: 1.04rem
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.98rem;
+    }
+
+    pre {
+
+        font-size: 0.98rem;
+    }
+}
