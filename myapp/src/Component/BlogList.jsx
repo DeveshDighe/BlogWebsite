@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { getAuth } from 'firebase/auth'
 
 import classes from './styling/Bloglist.module.css'
+import toast from 'react-hot-toast';
 
 const DB = fb.firestore();
 const Bloglist = DB.collection('blogs');
@@ -47,7 +48,7 @@ function BlogList(props) {
 
   const DeleteBlog = (id) => {
     Bloglist.doc(id).delete().then(() => {
-      alert('Blog deleted successfully');
+      toast.success('Blog deleted successfully');
     }).catch((error) => {
       console.error('Error removing Blog', error);
     })
