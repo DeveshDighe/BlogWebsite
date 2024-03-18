@@ -40,7 +40,7 @@ function Navbarr() {
                 <h4 className={`${classes.Navh4}`}>DevBlog</h4>
                 <h5 onClick={() => router('/')} className={`${classes.Navh5}`}>Home</h5>
                 <h5 onClick={() => router('/createBlogs')} className={`${classes.Navh5}`}>Create Blog</h5>
-                <h5 className={`${classes.Navh5}`}>Contact Us</h5>
+                <a href='#ContactUs' className={`${classes.Navh5} ${classes.NavhA5}`}>Contact Us</a>
             </div>
             <div>
                 {
@@ -59,11 +59,11 @@ function Navbarr() {
             </ul>)
             } */}
 
-                <ul className={`${dropDown ? classes.DropDown : classes.DropDownHide}`} id="toggle">
-                    <div>
+                <ul  className={`${dropDown ? classes.DropDown : classes.DropDownHide}`} id="toggle">
+                    <div onClick={() => Show()}>
                         <li><a href='#' onClick={() => router('/')} className={`${classes.Drop_A}`}>Home</a></li>
                         <li><a href='#' onClick={() => router('/createBlogs')} className={`${classes.Drop_A}`}>Create Blog</a></li>
-                        <li><a href='#' className={`${classes.Drop_A}`}>Contact Us</a></li>
+                        <li><a href='#ContactUs' className={`${classes.Drop_A}`}>Contact Us</a></li>
                         <li><a href='#' className={`${classes.Drop_A}`} onClick={() => router('/SignUp')}>SignIn</a></li>
                         <li><a href='#' className={`${classes.Drop_A}`} onClick={() => Signout()}>SignOut</a></li>
                     </div>
