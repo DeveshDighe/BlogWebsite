@@ -18,13 +18,15 @@
     /* margin-top: 20px; */
     color: white;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 50px;
 }
 
 .SecondFooterDiv {
     /* border: 1px solid green; */
-    width: 500px;
+    width: 300px;
     height: auto;
     display: flex;
     align-items: center;
@@ -32,7 +34,7 @@
 }
 
 .SecondFooterDiv>div {
-    border: 2px solid rgb(173, 173, 173);
+    /* border: 2px solid rgb(173, 173, 173); */
     padding: 10px;
     border-radius: 50%;
     cursor: pointer;
