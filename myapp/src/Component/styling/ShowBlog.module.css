@@ -133,7 +133,14 @@ pre {
     /* Center the content vertically */
     margin: 0;
     /* Remove default margin to ensure proper centering */
+
     color: rgb(0, 162, 255);
+}
+
+.NavhA5 {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
 }
 
 .Sign {
